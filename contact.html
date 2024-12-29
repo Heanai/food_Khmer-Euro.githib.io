@@ -1,0 +1,113 @@
+
+<style>
+    .contact{
+  background-color: #000000;
+ }
+ .contact .heading{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.4rem;
+  font-size: 2rem;
+}
+ .contact .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+ .contact .row .map{
+  flex: 1 1 45rem;
+  /* width: 100%; */
+  object-fit: cover;
+}
+.contact .row{
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid rgb(255, 255, 255);
+ }
+.contact .row form{
+  padding: 1rem;
+  text-align: center;
+  flex: 1 1 455rem;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #0c0c17;
+ }
+.contact .row form h3{
+  text-transform: uppercase;
+  color: #ad8908;
+  font-size: 2rem;
+ }
+.contact .row form h3 span{
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 2rem;
+ }
+.contact .row form .input-box{
+  display: flex;
+  /* align-items: center; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+ }
+.contact .row form .input-box input{
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  text-transform: none;
+  background-color: #000;
+  border: 1px solid rgb(184, 184, 184);
+  border-left: none;
+  border-radius: 10px;
+  color: #e2aa39;
+  
+}
+.contact .row form .input-box a{
+  border-radius: 10px;
+  border: 1px solid rgb(184, 184, 184);
+  border-right: none;
+  width: 10%;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 17px;
+  text-transform: none;
+  background-color: #000;
+ }
+.contact .row form .btn{
+  border: 1px solid rgb(184, 184, 184);
+  width: 30%;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 17px;
+  text-transform: none;
+  background-color: #d08d08;
+  border-radius: 10px;
+ }
+.contact .row form .btn:hover{
+  font-size: 18px;
+  text-transform: none;
+  background-color: #7b5404;
+ }
+</style>
+
+<section class="contact" id="contact">
+    <h1 class="heading"><span style="color: rgb(120, 62, 4);" >customer's</span> review</h1>
+    <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250151.46368062735!2d104.72537329230737!3d11.579317637321815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76a6be3%3A0x9c010ee85ab525bb!2sPhnom%20Penh!5e0!3m2!1sen!2skh!4v1729950751475!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form action="">
+            <h3>get <span> in touch</span></h3>
+            <div class="input-box">
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <input type="text" name="" id="" placeholder="name">
+            </div>
+            <div class="input-box">
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                <input type="email" name="" id="" placeholder="email">
+            </div>
+            <div class="input-box">
+                <a href=""><i class="fa-solid fa-phone"></i></a>
+                <input type="number" name="" id="" placeholder="number">
+            </div>
+            <input type="submit" value="contact now" class="btn">
+        </form>
+    </div>
+</section>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foot</title>
+        <link rel="stylesheet" href="foot.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="
+        sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    
+</head>
+
+<body>
+        <header>
+            <div class="logo">
+                <img src="https://i.pinimg.com/originals/5f/2d/c2/5f2dc2517021d0a8308c02315f5c3600.jpg" alt="">
+            </div>
+            <div class="nav">
+                <div class="m" id="home">Home</div>
+                <div class="m" id="show"class="dropdown">View <i class="fa-solid fa-down-long"></i></div>
+                <div class="m" id="showtype">Shop<i class="fa-solid fa-down-long"></i>
+                    <div class="type">
+                        <button id="foodkh">KHMER</button>
+                        <button id="foodeng">EURO</button>
+                    </div>
+                </div>
+                <div class="m" id="contact">Contact</div>
+                <div class="m" id="new">News</div>
+            </div>
+            <div class="icon">
+                    <div class="icon_shop">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                        <span class="Quantity">0</span>
+                    </div>
+            </div>
+        </header><br><br><br>
+            <div class="dropdown_item">
+                <a href="#about" class="item2">About</a>
+                <a href="#menu" class="item2">Menu</a>
+                <a href="#gallary" class="item2">Gallary</a>
+                <a href="#review" class="item2">Review</a>
+                <a href="#order" class="item2">Order</a>
+                <a id="hide"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+    
+    <section class="section">
+
+
+    </section>  
+    <section class="footer">
+        <div class="shear">
+            <a href="https://web.facebook.com/settings/?tab=linked_profiles"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://t.me/roeunsoknai"><i class="fa-brands fa-telegram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+        </div>
+        <div class="credit">Created by <span>sok nai web designer </span> | all rights reserved</div><br>
+
+    </section>
+</body>
+</html>
+<script type="module">
+    $(document).ready(function(){
+        $('#hide').click(function(){
+            $('.dropdown_item').slideUp(500);
+        });
+        $('#show').click(function(){
+            $('.dropdown_item').slideToggle(500);
+        });
+    });
+    $(document).ready(function(){
+        $('#showtype').click(function(){
+            $('.type').slideToggle(500);
+        });
+    });
+    $(document).ready(()=>{
+        function getPage(page){
+            $.ajax({
+                url:page,
+                cache:false,
+                success:function(respone){
+                    const res=`${respone}`;
+                    $('.section').html(res);
+                }
+
+            });
+        }
+        getPage('home.html');
+        $('#home').click(()=>{
+            getPage('home.html')
+        })
+        $('#foodeng').click(()=>{
+            getPage('foodeng.html')
+        })
+        $('#foodkh').click(()=>{
+            getPage('foodkh.html')
+        })
+        $('#contact').click(()=>{
+            getPage('contact.html')
+        })
+        $('#new').click(()=>{
+            getPage('new.html')
+        })
+      
+    })
+</script>

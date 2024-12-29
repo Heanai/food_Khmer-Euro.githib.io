@@ -1,0 +1,16 @@
+export const ArrProduct2=[
+    { id: 1, 
+        name: 'Food',
+         image: 'http://3.bp.blogspot.com/-Ay-NQb6_ccs/VANwwazAPTI/AAAAAAAADAE/RIOIK0t7arU/s1600/IMG_1255.JPG', 
+         price: 1000,
+          rate: 6 },
+    { id: 2, name: 'Food', image: 'http://foodyoushouldtry.com/wp-content/uploads/2017/02/korean-food.jpg', price: 2000, rate: 4 },
+    { id: 3, name: 'Food', image: 'https://tse2.mm.bing.net/th?id=OIP.9VF6OOS0OpTwecQ79-gdGgHaE8&pid=Api&P=0&h=220', price: 3000, rate: 5 },
+    { id: 4, name: 'Food', image: 'https://tse3.mm.bing.net/th?id=OIP.pCUqXq9I7CWoC0ZipWYrtAHaE7&pid=Api&P=0&h=220', price: 4000, rate: 3 },
+    { id: 5, name: 'Food', image: 'https://tse2.mm.bing.net/th?id=OIP.emOaW4N4inrRJ5_RQSKlnQHaFj&pid=Api&P=0&h=220', price: 5000, rate: 5 },
+    { id: 6, name: 'Food', image: 'https://img.delicious.com.au/G-2mxbOh/w1200/del/2022/08/parmesan-crumbed-chicken-schnitzel-fried-eggs-and-apple-cabbage-slaw-173352-2.jpg', price: 6000,rate: 5 },
+    { id: 7, name: 'Food', image: 'https://a.cdn-hotels.com/gdcs/production50/d1916/51d76cc9-cbe8-4572-a671-545f882f1847.jpg', price: 6000,rate: 5 },
+    { id: 8, name: 'Food', image: 'https://tse2.mm.bing.net/th?id=OIP.9VgUgd4k1-lo3a_MdCtDmAHaE8&pid=Api&P=0&h=220', price: 6000,rate: 5 },
+    { id: 9, name: 'Food', image: 'https://tse4.mm.bing.net/th?id=OIP.mdn3p-RTlDM-cQwiONe94QHaEJ&pid=Api&P=0&h=220', price: 6000,rate: 5 },
+    { id: 9, name: 'Food', image: 'https://tse4.mm.bing.net/th?id=OIP.45TCuGszB0a9k6eAhF_V8AHaE7&pid=Api&P=0&h=220', price: 6000,rate: 5 },
+    ];

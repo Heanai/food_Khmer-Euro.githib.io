@@ -1,0 +1,104 @@
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    .container2{
+        width: 80%;
+    height: 500px;
+    /* background-color: red; */
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    & .fa-chevron-left,.fa-chevron-right{
+        position: absolute;
+        top: 240px;
+        font-size: 25px;
+        padding: 10px;
+        cursor: pointer;
+        /* background-color:#ffffff80; */
+        color: #fff;
+    }
+    & .fa-chevron-left:hover,.fa-chevron-right:hover{
+        background-color: rgba(148, 148, 148, 0.726);
+        transition: 0.3s;
+        color: #fff;
+    }
+    & .fa-chevron-left{
+        left: 0px;
+    }
+    & .fa-chevron-right{
+        right: 0px;
+    }
+
+    
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+}
+</style>
+<div class="container2">
+    <i class="fa-solid fa-chevron-left"></i>
+    <i class="fa-solid fa-chevron-right"></i>
+    <div class="slide">
+        <img src="https://cdn.dribbble.com/users/4465419/screenshots/14252607/18.jpg" alt="">
+    </div>
+    <div class="slide">
+        <img src="https://png.pngtree.com/png-clipart/20210704/original/pngtree-orange-striped-fast-food-coupon-banner-png-image_6485849.jpg" alt="">
+    </div>
+    <div class="slide">
+        <img src="https://s3-us-west-2.amazonaws.com/issuewireassets/primg/48649/mid_20-off-on-prepared-meal-delivery-service1864033458.jpg" alt="">
+    </div>
+   
+</div>
+<script>
+    $(document).ready(function(){
+        var slide=$('.slide');
+        const numSlide=slide.length;
+        i=0;
+        slide.eq(i).show();
+        setInterval(function(){
+            slide.eq(i).hide();
+            i++;
+            if(i>=numSlide){
+                i=0;
+                slide.eq(i).show();
+            }else{
+                slide.eq(i).show()
+            }
+        }, 3000);
+        $('.fa-chevron-right').click(function(){
+            slide.eq(i).hide();
+            i++;
+            if(i>=numSlide){
+                i=0;
+                slide.eq(i).show()
+            }else{
+                slide.eq(i).show()
+            }
+            
+        })
+        $('.fa-chevron-left').click(function(){
+            slide.eq(i).hide();
+            i--;
+            if(i<0){
+                i=numSlide-1;
+                slide.eq(i).show()
+            }else{
+                slide.eq(i).show()
+            }
+            
+        })
+
+        
+        
+    })
+
+</script>
